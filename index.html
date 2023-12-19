@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bundle-container">
+    <div class="bundle-header">Bundle & Save</div>
+
+    <div class="bundle-box bundle-box-1">
+      <label>
+        <input type="radio" name="bundle" value="1 Pair DKK 195.00 - 50% Off">
+        1 Pair <br> <span>DKK 195.00 - 50% Off</span> 
+      </label>
+    </div>
+
+    <div class="bundle-box bundle-box-2">
+      <label>
+        <input type="radio" name="bundle" value="2 Pairs DMK 345.00 - 40% Off">
+        2 Pairs DMK 345.00 - 40% Off
+      </label><br><br>
+      <label for="color">Select Color:</label>
+  <select id="color" onchange="updateResult()">
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+
+  <label for="size">Select Size:</label>
+  <select id="size" onchange="updateResult()">
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+  </select>
+
+  <div id="result"></div>
+    </div>
+
+    <div class="bundle-box bundle-box-3">
+      <label>
+        <input type="radio" name="bundle" value="3 Pairs DKK 528.00 - 60% Off">
+        3 Pairs DKK 528.00 - 60% Off
+      </label>
+    </div>
+
+    <button id="addToCartBtn">+Add to Cart</button>
+    <script src="javascript.js"></script>
+  </div>
+</body>
+</html>
